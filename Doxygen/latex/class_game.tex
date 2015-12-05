@@ -1,0 +1,122 @@
+\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+The \doxyref{Game}{p.}{class_game} class the main class of game, using mainly Q\+Painter to do all painting.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf grow} ()\label{class_game_a95d8530f5a7e1a65250f02b06108d059}
+
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::grow}{p.}{class_game_a95d8530f5a7e1a65250f02b06108d059} increment board incriment board after certain time, increment as well all variables in play to keep game working. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Game} ()\label{class_game_ad59df6562a58a614fda24622d3715b65}
+
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::\+Game}{p.}{class_game_ad59df6562a58a614fda24622d3715b65} game constructor game constructor, load all pictures, start important timers, set rendering engine. \end{DoxyCompactList}\item 
+void {\bf delete\+Empty\+Space} ()\label{class_game_ace65c584cceee8977942ace8ad86d080}
+
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::delete\+Empty\+Space}{p.}{class_game_ace65c584cceee8977942ace8ad86d080} fix any floating tiles recursive function that fix floating tiles. \end{DoxyCompactList}\item 
+void {\bf key\+Press\+Event} (Q\+Key\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::key\+Press\+Event}{p.}{class_game_a08d72c91a6daedc8fa48194253f5e567} key press event, pressing space will start game. \end{DoxyCompactList}\item 
+void {\bf mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::mouse\+Press\+Event}{p.}{class_game_a704ba119948eebd1b6dfc547de967796} mouse press event, clicking will change to mouse down game state. \end{DoxyCompactList}\item 
+void {\bf mouse\+Move\+Event} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::mouse\+Move\+Event}{p.}{class_game_ad761e49ff42758930e76b477d08ba068} changing mouse position while pressed will swap tiles swiped across. \end{DoxyCompactList}\item 
+void {\bf mouse\+Release\+Event} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::mouse\+Release\+Event}{p.}{class_game_ae0fc55e9a55fa6c3c44d5a5efa1be987} releasing mouse return to in game state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf paint\+Event} (Q\+Paint\+Event $\ast$)\label{class_game_ab70cff651797a4eb2b3d1370f3adc7f0}
+
+\begin{DoxyCompactList}\small\item\em \doxyref{Game\+::paint\+Event}{p.}{class_game_ab70cff651797a4eb2b3d1370f3adc7f0} paint event that should be the main painting function but really, we just create the painter here and send it to where the main painting events occur, paint\+Tiles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Game}{p.}{class_game} class the main class of game, using mainly Q\+Painter to do all painting. 
+
+\subsection{Member Function Documentation}
+\index{Game@{Game}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!Game@{Game}}
+\subsubsection[{key\+Press\+Event(\+Q\+Key\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::key\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Key\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_game_a08d72c91a6daedc8fa48194253f5e567}
+
+
+\doxyref{Game\+::key\+Press\+Event}{p.}{class_game_a08d72c91a6daedc8fa48194253f5e567} key press event, pressing space will start game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event handler \\
+\hline
+\end{DoxyParams}
+\index{Game@{Game}!mouse\+Move\+Event@{mouse\+Move\+Event}}
+\index{mouse\+Move\+Event@{mouse\+Move\+Event}!Game@{Game}}
+\subsubsection[{mouse\+Move\+Event(\+Q\+Mouse\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::mouse\+Move\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_game_ad761e49ff42758930e76b477d08ba068}
+
+
+\doxyref{Game\+::mouse\+Move\+Event}{p.}{class_game_ad761e49ff42758930e76b477d08ba068} changing mouse position while pressed will swap tiles swiped across. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event handler \\
+\hline
+\end{DoxyParams}
+\index{Game@{Game}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Game@{Game}}
+\subsubsection[{mouse\+Press\+Event(\+Q\+Mouse\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::mouse\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_game_a704ba119948eebd1b6dfc547de967796}
+
+
+\doxyref{Game\+::mouse\+Press\+Event}{p.}{class_game_a704ba119948eebd1b6dfc547de967796} mouse press event, clicking will change to mouse down game state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event handler \\
+\hline
+\end{DoxyParams}
+\index{Game@{Game}!mouse\+Release\+Event@{mouse\+Release\+Event}}
+\index{mouse\+Release\+Event@{mouse\+Release\+Event}!Game@{Game}}
+\subsubsection[{mouse\+Release\+Event(\+Q\+Mouse\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Game\+::mouse\+Release\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_game_ae0fc55e9a55fa6c3c44d5a5efa1be987}
+
+
+\doxyref{Game\+::mouse\+Release\+Event}{p.}{class_game_ae0fc55e9a55fa6c3c44d5a5efa1be987} releasing mouse return to in game state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & event handler \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+game.\+h\item 
+game.\+cpp\end{DoxyCompactItemize}

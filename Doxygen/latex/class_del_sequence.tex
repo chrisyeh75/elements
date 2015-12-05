@@ -1,0 +1,103 @@
+\section{Del\+Sequence Class Reference}
+\label{class_del_sequence}\index{Del\+Sequence@{Del\+Sequence}}
+
+
+The \doxyref{Del\+Sequence}{p.}{class_del_sequence} class the delete sequence class, class that stores list of tiles to be deleted.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf add} (int x, int y)
+\begin{DoxyCompactList}\small\item\em \doxyref{Del\+Sequence\+::add}{p.}{class_del_sequence_ad9e5c357e9575ee3cf8cedf9a236dff1} add x and y position to sequence. \end{DoxyCompactList}\item 
+std\+::pair$<$ int, int $>$ {\bf operator[$\,$]} (int a)
+\begin{DoxyCompactList}\small\item\em \doxyref{Del\+Sequence\+::operator [$\,$]}{p.}{class_del_sequence_a8b0e2cbd0d75c814574bf744e62d8838} directly access elements. \end{DoxyCompactList}\item 
+bool {\bf operator==} ({\bf Del\+Sequence} d2)
+\begin{DoxyCompactList}\small\item\em \doxyref{Del\+Sequence\+::operator ==}{p.}{class_del_sequence_aaf59c8f7f00ce81886c89e8e414b767b} whether two sequence is same. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Time {\bfseries t}\label{class_del_sequence_ad80f295c651f81b3288b58cd58157fd7}
+
+\item 
+bool {\bfseries score\+\_\+added}\label{class_del_sequence_aba8848520a045e7e6e21dbaae96b9b9a}
+
+\item 
+int {\bfseries score\+\_\+inc}\label{class_del_sequence_a0f89aabc76a31a66531f99ea6c038ef8}
+
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ {\bfseries seq}\label{class_del_sequence_a4988a6eeafdbdd06dd150281e95e9bb8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \doxyref{Del\+Sequence}{p.}{class_del_sequence} class the delete sequence class, class that stores list of tiles to be deleted. 
+
+\subsection{Member Function Documentation}
+\index{Del\+Sequence@{Del\+Sequence}!add@{add}}
+\index{add@{add}!Del\+Sequence@{Del\+Sequence}}
+\subsubsection[{add(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}void Del\+Sequence\+::add (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_del_sequence_ad9e5c357e9575ee3cf8cedf9a236dff1}
+
+
+\doxyref{Del\+Sequence\+::add}{p.}{class_del_sequence_ad9e5c357e9575ee3cf8cedf9a236dff1} add x and y position to sequence. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & x position \\
+\hline
+{\em y} & y position \\
+\hline
+\end{DoxyParams}
+\index{Del\+Sequence@{Del\+Sequence}!operator==@{operator==}}
+\index{operator==@{operator==}!Del\+Sequence@{Del\+Sequence}}
+\subsubsection[{operator==(\+Del\+Sequence d2)}]{\setlength{\rightskip}{0pt plus 5cm}bool Del\+Sequence\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Del\+Sequence}}]{d2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_del_sequence_aaf59c8f7f00ce81886c89e8e414b767b}
+
+
+\doxyref{Del\+Sequence\+::operator ==}{p.}{class_del_sequence_aaf59c8f7f00ce81886c89e8e414b767b} whether two sequence is same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d2} & the other sequence to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether they are the same 
+\end{DoxyReturn}
+\index{Del\+Sequence@{Del\+Sequence}!operator[$\,$]@{operator[]}}
+\index{operator[$\,$]@{operator[]}!Del\+Sequence@{Del\+Sequence}}
+\subsubsection[{operator[](int a)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$int, int$>$ Del\+Sequence\+::operator[$\,$] (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_del_sequence_a8b0e2cbd0d75c814574bf744e62d8838}
+
+
+\doxyref{Del\+Sequence\+::operator [$\,$]}{p.}{class_del_sequence_a8b0e2cbd0d75c814574bf744e62d8838} directly access elements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & element to be accessed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pair for the x and y position 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+game.\+h\end{DoxyCompactItemize}
